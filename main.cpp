@@ -1,3 +1,9 @@
+//main.cpp Lab 1
+//COSC 2030 Section 10
+//Jordan Toppenberg
+//January 29, 2018
+
+
 #include <cstdlib>
 #include <iostream>
 //include other headers here
