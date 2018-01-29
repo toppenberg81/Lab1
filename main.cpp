@@ -6,12 +6,19 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <string>
+#include <fstream>
+
+using std::string;
+using std::ifstream;
 //include other headers here
 
 
 using namespace std;
 int main(int argc, char *argv[]){
   //use argv to get the file name
+  cout<<"Please enter the file name: ";
+  cin>>
 
   //TODO: Open the provided file and check if it failed
 
