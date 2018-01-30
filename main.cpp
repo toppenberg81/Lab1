@@ -15,16 +15,37 @@ using std::ifstream;
 
 
 using namespace std;
-int main(int argc, char *argv[]){
-  //use argv to get the file name
-  cout<<"Please enter the file name: ";
-  cin>>
+int main(int argc, char *argv[]) {
+	ifstream files;
+	string filename;
+	//use argv to get the file name
+	cout << "Please enter the file name: \n";
+	//cin >> *argv;
+	getline(cin, filename);
+	cout << filename;
+	files.open(filename);	
+	if (files.is_open())
+	{
+		cout << "did it";
+	}
+	//TODO: Open the provided file and check if it failed
 
-  //TODO: Open the provided file and check if it failed
+	files.open(filename);
+	if (files.is_open())
+	{
+		cout << "did it";
+	}
+	files.open(*argv);
+	cout <<"opened file"<< endl;
 
-  //TODO: Get number count
-  //TODO: Get first & last 2 numbers
+	while (!files);
+	{
+		cout << "Could not open: " << endl;
+	}
 
-  //TODO: Close the file and report results
+	//TODO: Get number count
+	//TODO: Get first & last 2 numbers
 
+	//TODO: Close the file and report results
+	cout << "end of prog";
 }
